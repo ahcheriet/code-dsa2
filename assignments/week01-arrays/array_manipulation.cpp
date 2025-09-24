@@ -38,7 +38,7 @@ void deleteElement(int arr[], int& size, int index) {
     
     // Shift elements to the left
     for (int i = index; i < size - 1; i++) {
-        arr[i] = arr[i + 1];
+        arr[i] = arr[i - 1]; // I only change + tto -
     }
     
     size--;
